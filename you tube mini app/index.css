@@ -1,0 +1,33 @@
+#navbar{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#navbar>div{
+    padding:20px;
+}
+#navbar>div{
+    font-size: 50px;
+    font-weight: bold;
+}
+#navbar>div>img{
+    height:60px;
+    width:60px;
+    
+}
+#search{
+    height:50px;
+    width:500px;
+    font-size: 30px;
+    margin-top:2%;
+}
+button{
+    height:50px;
+    width:80px;
+}
+#fill{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+}

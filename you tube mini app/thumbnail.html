@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   
+
+</style>
+<body>
+    <div id="container"></div>
+</body>
+</html>
+<script>
+    var array=JSON.parse(localStorage.getItem("thumbnail"));
+    console.log(array);
+    let container=document.querySelector("#container");
+    
+                let div=document.createElement("div");
+                
+                let title=document.createElement("p");
+                title.innerText=array[1];
+    
+                let iframe=document.createElement("iframe");
+                iframe.src=`https://www.youtube.com/embed/${array[0]}`;
+                iframe.height="900px";
+                iframe.width="100%";
+                iframe.allow="fullscreen";
+
+                
+                
+    
+                div.append(iframe,title);
+                container.append(div);
+            
+        
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
